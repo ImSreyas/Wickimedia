@@ -429,7 +429,7 @@
     </div>
     
     <!-- Gallery Navigation -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-lg-12">
         <div class="gallery-nav">
           <button class="gallery-btn active" data-filter="all">All</button>
@@ -438,7 +438,7 @@
           <button class="gallery-btn" data-filter="projects">Projects</button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Gallery Grid -->
     <div class="row gallery-grid">
@@ -513,7 +513,7 @@
 </div>
 
 <!-- Gallery Item 4 -->
-<div class="col-lg-4 col-md-6 gallery-item videos" data-aos="fade-up" data-aos-delay="400">
+<!-- <div class="col-lg-4 col-md-6 gallery-item videos" data-aos="fade-up" data-aos-delay="400">
   <div class="gallery-card">
     <div class="gallery-thumb">
       <div class="video-wrapper">
@@ -533,7 +533,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Gallery Item 5 -->
 <div class="col-lg-4 col-md-6 gallery-item videos" data-aos="fade-up" data-aos-delay="500">
@@ -628,7 +628,7 @@
 </div> -->
 
     <!-- Load More Button -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-lg-12">
         <div class="load-more-section">
           <div class="main-blue-button-hover">
@@ -636,7 +636,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 
@@ -652,14 +652,14 @@
         <p id="modalDescription"></p>
       </div>
     </div>
-    <div class="modal-nav">
+    <!-- <div class="modal-nav">
       <button id="prevBtn" class="nav-btn">
         <i class="fa fa-chevron-left"></i>
       </button>
       <button id="nextBtn" class="nav-btn">
         <i class="fa fa-chevron-right"></i>
       </button>
-    </div>
+    </div> -->
   </div>
 </div>
 
@@ -1291,48 +1291,48 @@
   });
   
   // Load More Functionality
-  const loadMoreBtn = document.getElementById('loadMore');
-  let currentItems = 6;
-  const itemsPerLoad = 3;
+  //const loadMoreBtn = document.getElementById('loadMore');
+  //let currentItems = 6;
+  //const itemsPerLoad = 3;
   
   // Initially hide items beyond the first 6
-  galleryItems.forEach((item, index) => {
-    if (index >= currentItems) {
-      item.style.display = 'none';
-    }
-  });
+  // galleryItems.forEach((item, index) => {
+  //   if (index >= currentItems) {
+  //     item.style.display = 'none';
+  //   }
+  // });
   
-  loadMoreBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    const hiddenItems = Array.from(galleryItems).slice(currentItems, currentItems + itemsPerLoad);
+  // loadMoreBtn.addEventListener('click', (e) => {
+  //   e.preventDefault();
+  //   const hiddenItems = Array.from(galleryItems).slice(currentItems, currentItems + itemsPerLoad);
     
-    hiddenItems.forEach(item => {
-      item.style.display = 'block';
-      setTimeout(() => {
-        item.style.opacity = '1';
-        item.style.transform = 'scale(1)';
-      }, 100);
-    });
+  //   hiddenItems.forEach(item => {
+  //     item.style.display = 'block';
+  //     setTimeout(() => {
+  //       item.style.opacity = '1';
+  //       item.style.transform = 'scale(1)';
+  //     }, 100);
+  //   });
     
-    currentItems += itemsPerLoad;
+  //   currentItems += itemsPerLoad;
     
-    if (currentItems >= galleryItems.length) {
-      loadMoreBtn.style.display = 'none';
-    }
-  });
+  //   if (currentItems >= galleryItems.length) {
+  //     loadMoreBtn.style.display = 'none';
+  //   }
+  // });
   
-  // Keyboard navigation for modal
-  document.addEventListener('keydown', (e) => {
-    if (modal.classList.contains('show')) {
-      if (e.key === 'Escape') {
-        modal.classList.remove('show');
-        document.body.style.overflow = 'auto';
-        modalVideo.innerHTML = '';
-        const modalVideoElement = modalVideo.querySelector('video');
-        if (modalVideoElement) modalVideoElement.pause();
-      }
-    }
-  });
+  // // Keyboard navigation for modal
+  // document.addEventListener('keydown', (e) => {
+  //   if (modal.classList.contains('show')) {
+  //     if (e.key === 'Escape') {
+  //       modal.classList.remove('show');
+  //       document.body.style.overflow = 'auto';
+  //       modalVideo.innerHTML = '';
+  //       const modalVideoElement = modalVideo.querySelector('video');
+  //       if (modalVideoElement) modalVideoElement.pause();
+  //     }
+  //   }
+  // });
   
   // AOS Animation (if you have AOS library)
   if (typeof AOS !== 'undefined') {
