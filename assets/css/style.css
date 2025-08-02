@@ -1146,9 +1146,12 @@ About
 }
 
 .about-us .left-image {
+  border-radius: 1rem;
   margin-right: 30px;
 }
-
+.about-us .left-image img{
+  border-radius: 5rem;
+}
 .about-us .section-heading h2 {
   margin-right: 60px;
 }
