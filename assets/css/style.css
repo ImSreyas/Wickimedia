@@ -408,9 +408,9 @@ header
 
 .header-area .main-nav .logo img {
   height: 100px; /* Reduced from 70px to give some padding */
+  /* something */
   width: 100px; /* Maintain aspect ratio */
 }
-
 /* Update for background header state */
 .background-header .main-nav .logo {
   height: 80px; /* Ensure consistent height */
