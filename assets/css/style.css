@@ -16,16 +16,16 @@ Table of contents
 12. portfolio
 
 --------------------------------------------- */
-/* 
+/*
 ---------------------------------------------
 font & reset css
---------------------------------------------- 
+---------------------------------------------
 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-/* 
+/*
 ---------------------------------------------
 reset
---------------------------------------------- 
+---------------------------------------------
 */
 html,
 body,
@@ -195,10 +195,10 @@ img {
   overflow: hidden;
 }
 
-/* 
+/*
 ---------------------------------------------
 global styles
---------------------------------------------- 
+---------------------------------------------
 */
 html,
 body {
@@ -339,10 +339,10 @@ body {
   letter-spacing: 0.25px;
 }
 
-/* 
+/*
 ---------------------------------------------
 header
---------------------------------------------- 
+---------------------------------------------
 */
 
 .background-header {
@@ -828,18 +828,19 @@ header
 }
 @media (max-width: 767px) {
   .header-area .main-nav .logo {
-    margin-left: 30px;
+    margin-left: 20px;
     height: 100px; /* Match mobile header height */
   }
-  
+
   .header-area .main-nav .logo img {
     height: 50px; /* Smaller logo for mobile */
+    width: 50px;
   }
 }
-/* 
+/*
 ---------------------------------------------
 preloader
---------------------------------------------- 
+---------------------------------------------
 */
 
 .js-preloader {
@@ -936,10 +937,10 @@ preloader
   border-radius: 50%;
 }
 
-/* 
+/*
 ---------------------------------------------
 Banner Style
---------------------------------------------- 
+---------------------------------------------
 */
 
 .main-banner {
@@ -1062,10 +1063,10 @@ Banner Style
   border-bottom: 3px solid #ff685f;
 }
 
-/* 
+/*
 ---------------------------------------------
 Services Style
---------------------------------------------- 
+---------------------------------------------
 */
 
 .our-services .services-left-dec img {
@@ -1154,10 +1155,10 @@ Services Style
   height: 10px;
 }
 
-/* 
+/*
 ---------------------------------------------
 About
---------------------------------------------- 
+---------------------------------------------
 */
 
 .about-us {
@@ -1207,10 +1208,10 @@ About
   border-top: 1px solid #eee;
 }
 
-/* 
+/*
 ---------------------------------------------
 Portfolio
---------------------------------------------- 
+---------------------------------------------
 */
 
 .our-portfolio .portfolio-left-dec img {
@@ -1376,10 +1377,10 @@ Portfolio
   height: 10px;
 }
 
-/* 
+/*
 ---------------------------------------------
 Pricing
---------------------------------------------- 
+---------------------------------------------
 */
 
 .pricing-tables .tables-left-dec img {
@@ -1481,10 +1482,10 @@ Pricing
   background-image: url(../images/third-plan-bg.png);
 }
 
-/* 
+/*
 ---------------------------------------------
 Subscribe
---------------------------------------------- 
+---------------------------------------------
 */
 
 .subscribe {
@@ -1570,10 +1571,10 @@ Subscribe
   background-color: #ff695f;
 }
 
-/* 
+/*
 ---------------------------------------------
 Video
---------------------------------------------- 
+---------------------------------------------
 */
 
 .our-videos .videos-left-dec img {
@@ -1739,10 +1740,10 @@ Video
   transition: all 0.3s;
 }
 
-/* 
+/*
 ---------------------------------------------
 contact
---------------------------------------------- 
+---------------------------------------------
 */
 
 .contact-dec img {
@@ -1905,10 +1906,10 @@ contact
   }
 }
 
-/* 
+/*
 ---------------------------------------------
 Footer Style
---------------------------------------------- 
+---------------------------------------------
 */
 
 .footer-dec {
@@ -2033,10 +2034,10 @@ footer .copyright p a {
   color: #ff695f;
 }
 
-/* 
+/*
 ---------------------------------------------
 responsive
---------------------------------------------- 
+---------------------------------------------
 */
 
 @media (max-width: 1240px) {
@@ -2648,17 +2649,17 @@ responsive
   .our-gallery .section-heading h2 {
     margin: 0px;
   }
-  
+
   .gallery-nav {
     margin-bottom: 40px;
   }
-  
+
   .gallery-btn {
     margin: 0 5px 10px 0;
     padding: 10px 20px;
     font-size: 14px;
   }
-  
+
   .gallery-thumb {
     height: 220px;
   }
@@ -2668,49 +2669,49 @@ responsive
   .our-gallery {
     padding-top: 80px;
   }
-  
+
   .gallery-nav {
     margin-bottom: 30px;
   }
-  
+
   .gallery-btn {
     display: block;
     width: 100%;
     margin: 0 0 10px 0;
   }
-  
+
   .gallery-thumb {
     height: 200px;
   }
-  
+
   .overlay-content h4 {
     font-size: 18px;
   }
-  
+
   .overlay-content p {
     font-size: 13px;
   }
-  
+
   .play-btn,
   .zoom-btn {
     width: 50px;
     height: 50px;
     font-size: 18px;
   }
-  
+
   .modal-content {
     max-width: 95%;
     max-height: 95%;
   }
-  
+
   .modal-info {
     padding: 15px;
   }
-  
+
   .modal-info h3 {
     font-size: 20px;
   }
-  
+
   .modal-info p {
     font-size: 14px;
   }
@@ -2720,15 +2721,15 @@ responsive
   .gallery-thumb {
     height: 180px;
   }
-  
+
   .overlay-content {
     padding: 15px;
   }
-  
+
   .overlay-content h4 {
     font-size: 16px;
   }
-  
+
   .play-btn,
   .zoom-btn {
     width: 45px;
