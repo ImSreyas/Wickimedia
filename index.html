@@ -55,7 +55,7 @@
             <nav class="main-nav">
               <!-- ***** Logo Start ***** -->
               <a href="#" class="logo">
-                <img src="assets/images/logo-3.png" /> 
+                <img src="assets/images/logo-3.png" />
                 <span>Wickimedia </span>
               </a>
 
@@ -428,7 +428,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Gallery Navigation -->
     <!-- <div class="row">
       <div class="col-lg-12">
@@ -1013,7 +1013,7 @@
                       </div>
                     </div>
                   </div>
-                </div>             
+                </div>
               </div>
             </div>
           </div>
@@ -1117,7 +1117,7 @@
               <div class="logo">
                 <a href="#"
                   ><img
-                    src="assets/images/logo.png"
+                    src="assets/images/logo-3.png"
                     alt=" "
                 /></a>
               </div>
@@ -1205,16 +1205,16 @@
   // Gallery Filter Functionality
   const filterBtns = document.querySelectorAll('.gallery-btn');
   const galleryItems = document.querySelectorAll('.gallery-item');
-  
+
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       // Remove active class from all buttons
       filterBtns.forEach(b => b.classList.remove('active'));
       // Add active class to clicked button
       btn.classList.add('active');
-      
+
       const filterValue = btn.getAttribute('data-filter');
-      
+
       galleryItems.forEach(item => {
         if (filterValue === 'all') {
           item.classList.remove('hide');
@@ -1228,7 +1228,7 @@
       });
     });
   });
-  
+
   // Modal Functionality
   const modal = document.getElementById('galleryModal');
   const modalImage = document.getElementById('modalImage');
@@ -1236,7 +1236,7 @@
   const modalTitle = document.getElementById('modalTitle');
   const modalDescription = document.getElementById('modalDescription');
   const closeModal = document.querySelector('.close-modal');
-  
+
   // Open modal on image/video click
   document.querySelectorAll('.zoom-btn, .play-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -1246,10 +1246,10 @@
       const description = card.querySelector('p').textContent;
       const img = card.querySelector('img');
       const video = card.querySelector('video');
-      
+
       modalTitle.textContent = title;
       modalDescription.textContent = description;
-      
+
       if (img && btn.classList.contains('zoom-btn')) {
         modalImage.src = img.src;
         modalImage.style.display = 'block';
@@ -1265,12 +1265,12 @@
         modalVideo.style.display = 'block';
         modalImage.style.display = 'none';
       }
-      
+
       modal.classList.add('show');
       document.body.style.overflow = 'hidden';
     });
   });
-  
+
   // Close modal
   closeModal.addEventListener('click', () => {
     modal.classList.remove('show');
@@ -1279,7 +1279,7 @@
     const modalVideoElement = modalVideo.querySelector('video');
     if (modalVideoElement) modalVideoElement.pause();
   });
-  
+
   // Close modal on background click
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
@@ -1290,23 +1290,23 @@
       if (modalVideoElement) modalVideoElement.pause();
     }
   });
-  
+
   // Load More Functionality
   //const loadMoreBtn = document.getElementById('loadMore');
   //let currentItems = 6;
   //const itemsPerLoad = 3;
-  
+
   // Initially hide items beyond the first 6
   // galleryItems.forEach((item, index) => {
   //   if (index >= currentItems) {
   //     item.style.display = 'none';
   //   }
   // });
-  
+
   // loadMoreBtn.addEventListener('click', (e) => {
   //   e.preventDefault();
   //   const hiddenItems = Array.from(galleryItems).slice(currentItems, currentItems + itemsPerLoad);
-    
+
   //   hiddenItems.forEach(item => {
   //     item.style.display = 'block';
   //     setTimeout(() => {
@@ -1314,14 +1314,14 @@
   //       item.style.transform = 'scale(1)';
   //     }, 100);
   //   });
-    
+
   //   currentItems += itemsPerLoad;
-    
+
   //   if (currentItems >= galleryItems.length) {
   //     loadMoreBtn.style.display = 'none';
   //   }
   // });
-  
+
   // // Keyboard navigation for modal
   // document.addEventListener('keydown', (e) => {
   //   if (modal.classList.contains('show')) {
@@ -1334,7 +1334,7 @@
   //     }
   //   }
   // });
-  
+
   // AOS Animation (if you have AOS library)
   if (typeof AOS !== 'undefined') {
     AOS.init({
@@ -1343,7 +1343,7 @@
       once: true
     });
   }
-});  
+});
     </script>
   </body>
 </html>
